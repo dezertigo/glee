@@ -1,0 +1,83 @@
+$bg: #436372;
+$title: #243f4d;
+$colorTitle: #191919;
+$colorBtn: #8b8b8b;
+
+%dmsans-400 {
+    font-family: 'DMSans-Regular', sans-serif;
+    font-weight: 400;
+}
+
+%dmsans-500 {
+    font-family: 'DMSans-Medium', sans-serif;
+    font-weight: 500;
+}
+
+%dmsans-700 {
+    font-family: 'DMSans-Bold', sans-serif;
+    font-weight: 700;
+}
+
+%rubik-400 {
+    font-family: 'Rubik-Regular', sans-serif;
+    font-weight: 400;
+}
+
+%rubik-500 {
+    font-family: 'Rubik-Medium', sans-serif;
+    font-weight: 500;
+}
+
+%rubik-700 {
+    font-family: 'Rubik-Bold', sans-serif;
+    font-weight: 700;
+}
+
+%btn {
+    border: 1px solid #b3b7b5;
+    padding: 23px 27px;
+    background-color: transparent;
+    color: $bg;
+    cursor: pointer;
+    font-size: 15px;
+    line-height: 12px;
+    @extend %rubik-500;
+    border-radius: 5px;
+    position: relative;
+    transition: all .3s;
+    &::after {
+        content: '';
+        position: absolute;
+        background-image: url(../images/icons/arrow-dark.svg);
+        right: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 22px;
+        height: 9px;
+    }
+    &:hover {
+        background-color: #a3bbc8;
+        color: #fff;
+        background-image: url();
+    }
+    &:hover::after {
+        content: '';
+        position: absolute;
+        background-image: url(../images/icons/arrow.svg);
+        right: 18px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 22px;
+        height: 9px;
+        transition: all 0.3s;
+    }
+}
+
+%checkbox-hidden,
+%radio-hidden {
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    position: absolute;
+}
