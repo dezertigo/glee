@@ -332,7 +332,6 @@ ul.slick-dots {
         display: flex;
         flex-wrap: wrap;
         column-gap: 30px;
-        justify-content: center;
         align-items: center;
     }
     &__inner {
@@ -465,20 +464,25 @@ ul.slick-dots {
 .design {
     padding: 50px 0 60px;
     &__content {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-gap: 35px 30px;
-        min-height: 525px
+        // display: grid;
+        // grid-template-columns: repeat(3, 1fr);
+        // grid-template-rows: repeat(2, 1fr);
+        // grid-gap: 35px 30px;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 30px;
     }
 }
 
 .design-item {
     padding-top: 40px;
     padding-left: 35px;
+    margin-bottom: 40px;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+    min-height: 250px;
+    width: 370px;
     &__title {
         max-width: 190px;
         font-size: 20px;
@@ -547,6 +551,7 @@ ul.slick-dots {
     }
     &__item-img {
         margin-bottom: -40px;
+        
     }
     &__desc-title {
         font-size: 14px;
