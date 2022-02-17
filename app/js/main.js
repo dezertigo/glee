@@ -8,4 +8,13 @@ $(function() {
     });
 });
 
-var mixer = mixitup('.products__content');
+var products = document.querySelector('[data-ref="products"]');
+var design = document.querySelector('[data-ref="design"]');
+var config = {
+    controls: {
+        scope: 'local'
+    }
+};
+var mixer1 = mixitup(products, config);
+var mixer2 = mixitup(design, config);
+
